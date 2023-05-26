@@ -1,12 +1,11 @@
-div {
+.sample1 , .sample2 {
   font-size: 36px;
-}
-.wrapper {
   color: red;
 }
-#one {
-  color: blue;
+.wrapper{
+  font-size: 38px;
 }
-div:hover {
-  font-size: 48px;
+.wrapper .contents {
+  font-size: 26px;
+  color: blue;
 }
