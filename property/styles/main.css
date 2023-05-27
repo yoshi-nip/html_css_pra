@@ -1,0 +1,57 @@
+.sample1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: blue;
+}
+
+.sample2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.bg-color {
+  background-color: #4eda35;
+}
+
+.bg-img {
+  height: 400px;
+  background-color: #4eda35;
+  background-image: url(https://wp-p.info/reps/css-biginner/img/19_01.jpg);
+  background-size: cover;
+}
+
+.box {
+  height: 600px;
+  background-color: #4eda35;
+  border: 5px solid #181a91;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.box2 {
+  height: 600px;
+  background-color: #d1861c;
+  border: 5px solid #181a91;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.box3 {
+  height: 600px;
+  width: 600px;
+  background-color: #d1861c;
+  border: 5px solid #181a91;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.box4 {
+  box-sizing: border-box;
+  height: 600px;
+  width: 600px;
+  background-color: #d1861c;
+  border: 5px solid #181a91;
+  border-radius: 6px;
+  padding: 20px;
+}/*# sourceMappingURL=main.css.map */
