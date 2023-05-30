@@ -1,0 +1,45 @@
+.block {
+  background-color: #5646e9;
+}
+
+.inline-block {
+  display: inline-block;
+  background-color: #dd8725;
+}
+
+.inline {
+  display: inline;
+  background-color: #2af786;
+  padding: 20px;
+  margin: 40px;
+}
+
+.static {
+  background-color: #dd8725;
+  position: static;
+  height: 700px;
+}
+
+.relative {
+  background-color: #3ac3df;
+  position: relative;
+  height: 700px;
+  top: -100px;
+  left: 20px;
+  z-index: -1;
+}
+
+.absolute {
+  background-color: #f036b2;
+  position: absolute;
+  height: 600px;
+  top: 0;
+}
+
+.fixed {
+  background-color: #e4ea24;
+  position: fixed;
+  height: 40px;
+  bottom: 0;
+  width: 100%;
+}/*# sourceMappingURL=main.css.map */
