@@ -1,0 +1,45 @@
+.parent {
+
+  background-color: #e69418;
+  height: 400px;
+  width: 100%;
+}
+
+.child {
+  background-color: #61e846;
+  height: 100px;
+  width: 23%;
+  margin: 0 auto;
+}
+
+.parent-justify-align{
+  background-color: #4118e6;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.child-justify-align{
+  background-color: #61e846;
+  height: 100px;
+  width: 23%;
+}
+
+.text-center {
+  background-color: #c4e618;
+  height: 400px;
+  width: 100%;
+  // display: flex;
+  // justify-content: center;
+  text-align: center;
+  line-height: 400px;
+}
+.text-center-flex{
+  background-color: #65b2d6;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
