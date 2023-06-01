@@ -21,7 +21,7 @@ a {
 }
 
 .intro-container {
-  background-image: url(../img/head_bg.jpg);
+  background: url(../img/head_bg.jpg) no-repeat center center;
   background-size: cover;
   margin-top: -20px;
   padding: 160px 0;
