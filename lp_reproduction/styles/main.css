@@ -11,6 +11,78 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+header nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-item-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0 15px;
+  min-height: 112px;
+}
+.nav-item-wrapper span {
+  display: block;
+}
+.nav-item-wrapper li {
+  width: 100%;
+  font-family: "arial";
+  font-weight: 700;
+  white-space: nowrap;
+  padding: 15px;
+}
+.nav-item-wrapper li a {
+  color: #000;
+  text-decoration: none;
+}
+
+.header-btn-wrapper {
+  background-color: #F5B92F;
+  padding: 14px 45px 12px 20px;
+  display: flex;
+  position: relative;
+}
+.header-btn-wrapper span {
+  color: #fff;
+  font-weight: 700;
+  display: block;
+  white-space: nowrap;
+}
+.header-btn-wrapper .header-btn-right {
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  margin-top: -8px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  height: 16px;
+  width: 16px;
+  transform: rotate(45deg);
+}
+
 .lp-wrap {
   font-family: "小塚ゴシック Pro", 游ゴシック, Meiryo, sans-serif;
   font-size: 16px;
