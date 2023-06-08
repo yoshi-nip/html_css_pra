@@ -13,3 +13,16 @@ const plus2 = function (number) {
   return result;
 };
 console.log(plus2(number));
+
+//コールバック関数
+//実行結果じゃなくて関数を引数に渡すことに注意
+function doTwice(fn) {
+  fn();
+  fn();
+}
+
+const sayHello = function () {
+  console.log('Hello');
+  return 'Hello';
+};
+doTwice(sayHello);
