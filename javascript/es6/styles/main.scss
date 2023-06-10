@@ -1,0 +1,11 @@
+.sample1 , .sample2 {
+  font-size: 36px;
+  color: blue;
+}
+.wrapper{
+  font-size: 38px;
+  .contents {
+    font-size: 26px;
+    color: green;
+  }
+}
