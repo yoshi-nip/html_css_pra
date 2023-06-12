@@ -16,10 +16,17 @@ const onclick = () => {
   completeButton.className = 'complete-button';
   completeButton.innerText = '完了';
   console.log(completeButton);
+  completeButton.addEventListener('click', () => {
+    alert('完了');
+  });
 
   const deleteButton = document.createElement('button');
   deleteButton.className = 'delete-button';
   deleteButton.innerText = '削除';
+  deleteButton.addEventListener('click', () => {
+    const deleteTarget = deleteButton.parentNode.parentNode;
+    document.getElementById('incomplete-list').removeChild(deleteTarget);
+  });
   console.log(deleteButton);
 
   div.appendChild(p);
@@ -30,13 +37,6 @@ const onclick = () => {
   console.log(li);
 
   document.getElementById('incomplete-list').appendChild(li);
-  // <li>
-  //         <div class="li-wrapper">
-  //           <p>ToDoです</p>
-  //           <button>完了</button>
-  //           <button>削除</button>
-  //         </div>
-  //       </li>
 };
 
 window.document.getElementById('add-button').addEventListener('click', onclick);
