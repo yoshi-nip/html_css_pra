@@ -3,11 +3,11 @@ const onclick = () => {
   window.document.getElementById('add-text').value = '';
   alert(addText);
 
+  //要素の作成
   const li = document.createElement('li');
 
   const div = document.createElement('div');
   div.className = 'li-wrapper';
-  console.log(div);
 
   const p = document.createElement('p');
   p.innerText = addText;
@@ -17,7 +17,11 @@ const onclick = () => {
   completeButton.innerText = '完了';
   console.log(completeButton);
   completeButton.addEventListener('click', () => {
-    alert('完了');
+    const deleteTarget = deleteButton.parentNode.parentNode;
+    const comleteNode = deleteTarget;
+    document.getElementById('incomplete-list').removeChild(deleteTarget);
+    document.getElementById('complete-list').appendChild(comleteNode);
+    console.log(comleteNode);
   });
 
   const deleteButton = document.createElement('button');
@@ -27,14 +31,22 @@ const onclick = () => {
     const deleteTarget = deleteButton.parentNode.parentNode;
     document.getElementById('incomplete-list').removeChild(deleteTarget);
   });
-  console.log(deleteButton);
 
+  // const backButton = document.createElement('button');
+  // backButton.className = 'back-button';
+  // backButton.innerText = '戻る';
+  // backButton.addEventListener('click', () => {
+  //   const backTarget = backButton.parentNode.parentNode;
+  //   document.getElementById('complete-list').removeChild(backTarget);
+
+  // });
+  // console.log(deleteButton);
+
+  //要素を階層ごとに挿入
   div.appendChild(p);
   div.appendChild(completeButton);
   div.appendChild(deleteButton);
-
   li.appendChild(div);
-  console.log(li);
 
   document.getElementById('incomplete-list').appendChild(li);
 };
