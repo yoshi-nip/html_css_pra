@@ -28,8 +28,9 @@ const onclick = () => {
   deleteButton.className = 'delete-button';
   deleteButton.innerText = '削除';
   deleteButton.addEventListener('click', () => {
-    const deleteTarget = deleteButton.parentNode.parentNode;
-    document.getElementById('incomplete-list').removeChild(deleteTarget);
+    deleteFromIncompleteList(deleteButton.parentNode.parentNode);
+    // const deleteTarget = deleteButton.parentNode.parentNode;
+    // document.getElementById('incomplete-list').removeChild(deleteTarget);
   });
 
   // const backButton = document.createElement('button');
@@ -49,6 +50,11 @@ const onclick = () => {
   li.appendChild(div);
 
   document.getElementById('incomplete-list').appendChild(li);
+};
+
+const deleteFromIncompleteList = (target) => {
+  const deleteTarget = deleteButton.parentNode.parentNode;
+  document.getElementById('incomplete-list').removeChild(target);
 };
 
 window.document.getElementById('add-button').addEventListener('click', onclick);
